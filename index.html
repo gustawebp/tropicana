@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tropicana</title>
+
+ <script src="js.js"></script> 
+</head>
+<body>  
+
+    <div id="menu">
+
+     
+     <a onclick="end()" class="a" href="">Endereço</a>
+      <a target="_blank" class="a" href="https://wa.me/5511961973330">Pedir Agora</a> 
+       <a target="_blank" class="a" href="https://linkedin.com">Trabalhe Conosco</a> 
+    </div> 
+    
+<h1>Tropicana</h1>
+
+    
+    <!-- <h2>Sua satisfação, nosso compromisso</h2> -->
+
+    <!-- <div id="imgdiv">
+        <img id="img1" src="img[/pexels-mehrdad-badr-12567335.jpg" alt="">
+    </div> -->
+
+
+        </head>
+        <body>
+            <!-- <h3>Fast Foods</h3>     <br> -->
+
+        <div class="slideshow-container">
+        
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="img[/pexels-mehrdad-badr-12567335.jpg" style="width:100%">
+          <div class="text">Hambúrger 100%</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="img[/pexels-peps-silvestro-12129480.jpg" style="width:100%">
+          <div class="text">Combo Rústico </div>
+        </div>
+        
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="img[/pexels-ata-ebem-10831651.jpg" style="width:100%">
+            <div class="text">Combo Rústico 2  </div>
+          </div>
+
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+
+   
+
+   
+
+        <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+    
+</body>
+</html>
